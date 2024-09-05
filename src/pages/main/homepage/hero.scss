@@ -1,0 +1,120 @@
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__left{
+        order: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+         .hero-text-title {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 67px;
+            font-weight: 600;
+            line-height: 73.7px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+        .hero-text-desc {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 35.2px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+        .hero-text-button {
+            width: 224px;
+            height: 60px;
+            border-radius: 20px;
+            background: #A259FF;
+            border: none;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22.4px;
+            text-align: center;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            transition: 0.4s;
+        }
+        .total {
+            width: 70%;
+            height: 77px;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 1200px) {
+                width: 100%;
+            }
+
+            @media (max-width: 768px) {
+               
+                align-items: center;
+            }
+            .total-item {
+                width: 33%;
+                height: 77px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .total-item-title {
+                    font-family: 'Space Mono', monospace;
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 39.2px;
+                    text-align: left;
+                    color: #FFFFFF;
+                }
+                .total-item-desc {
+                    font-family: 'Work Sans', sans-serif;
+                    font-size: 23.99px;
+                    font-weight: 400;
+                    line-height: 38.38px;
+                    text-align: left;
+                    color: #FFFFFF;
+
+                }
+            }
+        }
+    }
+    &__right{
+        order: 1;
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        max-height: 330px;
+    }
+}
+@media (min-width:700px) {
+    .hero{
+        
+        flex-direction: row;
+        &__left{
+            order: 1;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            text-align: center;
+            gap: 15px;
+        }
+        &__right{
+            order: 2;
+            width: 50%;
+        }
+        img{
+            max-height: 600px;
+        }
+    }
+    
+
+}

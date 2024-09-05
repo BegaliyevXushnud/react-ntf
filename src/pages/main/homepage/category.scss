@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.categories {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1cm;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .categories-title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 39.2px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 10px;
+  }
+
+  .categories-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    .categories-cards-card {
+      width: 24%;
+      background-color: #3B3B3B;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+
+      .ccc-imgs {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .cards-card-img {
+          width: 100%;
+          height: 100%;
+          margin-top: 3px;
+          object-fit: cover;
+          border-radius: 20px 20px 0 0;
+          z-index: 0;
+        }
+
+        .cards-card-icon {
+          position: absolute;
+          z-index: 5;
+          transition: 0.4s;
+        }
+      }
+
+      .cards-card-text {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        .card-text-title {
+          font-family: 'Work Sans', sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 22.4px;
+          text-align: left;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1000px) {
+    height: 900px;
+
+    .categories-cards {
+      height: 800px;
+
+      .categories-cards-card {
+        height: 47%;
+
+        .cards-card-text .card-text-title {
+          font-size: 25px;
+        }
+
+        .cards-card-icon {
+          transform: scale(0);
+        }
+
+        &:hover .cards-card-img {
+          filter: blur(3px);
+        }
+
+        &:hover .cards-card-icon {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
