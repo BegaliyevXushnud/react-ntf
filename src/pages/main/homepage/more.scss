@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.more {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .more-text {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .more-text-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .more-text-title-title {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: left;
+        color: #ffffff;
+      }
+
+      .more-text-title-desc {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.6;
+        text-align: left;
+        color: #ffffff;
+      }
+    }
+
+    .more-button {
+      width: 147px;
+      height: 40px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      background: transparent;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22.4px;
+      color: #ffffff;
+
+      .fa-eye {
+        font-size: 16px;
+        color: #a259ff;
+      }
+    }
+  }
+
+  .more-cards {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .more-cards-card {
+      width: 100%;
+      max-width: 48%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      background: #3B3B3B;
+      border-radius: 20px;
+
+      .more-cc-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .more-cc-text {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .more-cc-text-p {
+          font-family: 'Work Sans', sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 30.8px;
+          color: #ffffff;
+        }
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .more-cc-desc,
+      .more-cc-desces {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          margin: 0;
+          font-size: 13px;
+        }
+      }
+
+      .more-cc-desc {
+        font-family: 'Space Mono', monospace;
+        font-size: 12px;
+        font-weight: 400;
+        color: #858584;
+      }
+
+      .more-cc-desces {
+        font-family: 'Space Mono', monospace;
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+      }
+    }
+    .none{
+        display: none;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .more-cards {
+      .more-cards-card {
+        width: 30%;
+        .more-cc-text{
+          .more-cc-text-p{
+            font-size: 30px;
+          }
+        }
+        .more-cc-desc{
+          font-size: 25px;
+        }
+      }
+      .none{
+        display: flex;
+    }
+    }
+  }
+}

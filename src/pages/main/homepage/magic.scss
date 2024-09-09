@@ -1,0 +1,238 @@
+.magic {
+    width: 100%;
+    height: 630px;
+    background-color: aqua;
+    margin-top: 1cm;
+    background-image: url(../../../assets/magic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  padding: 40px;
+    .magic-text {
+      width: 50%;
+      height: 170px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  gap: 30px;
+      .magic-text-img {
+        width: 141px;
+        height: 34px;
+      }
+  
+      .magic-text-title {
+        font-family: 'Work Sans';
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 45.6px;
+        text-align: left;
+        color: #ffffff;
+      }
+  
+      .magic-text-button {
+        width: 280px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        font-family: 'Work Sans';
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22.4px;
+        text-align: center;
+        color: #000000;
+  
+        .fa-eye {
+          font-size: 20px;
+          color: #a259ff;
+        }
+      }
+    }
+  
+    .strength {
+      width: 415px;
+      height: 144px;
+      border-radius: 20px;
+      background: #3b3b3b80;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .strength-s {
+        font-family: 'Space Mono';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 13.2px;
+        text-align: left;
+        color: #ffffff;
+      }
+  
+      .strength-p {
+        font-family: 'Space Mono';
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 45.6px;
+        text-align: left;
+        color: #ffffff;
+      }
+  
+      .strength-k {
+        font-family: 'Space Mono';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 13.2px;
+        text-align: left;
+        color: #ffffff;
+        display: flex;
+        gap: 30px;
+      }
+    }
+  }
+  
+  .work {
+    text-align: center;
+    padding: 2rem;
+  
+    .work-title {
+      font-family: 'Work Sans';
+      font-size: 28px;
+      font-weight: 600;
+      color: #000;
+    }
+  
+    .work-desc {
+      font-family: 'Work Sans';
+      font-size: 16px;
+      font-weight: 400;
+      color: #666;
+    }
+  
+    .work-items {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+  
+      .work-items-item {
+        background: #f5f5f5;
+        border-radius: 10px;
+        padding: 1rem;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        .items-item-img {
+          width: 100px;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+  
+        .work-img {
+          text-align: center;
+  
+          .work-img-title {
+            font-family: 'Work Sans';
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+          }
+  
+          .work-img-desc {
+            font-family: 'Work Sans';
+            font-size: 14px;
+            font-weight: 400;
+            color: #777;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .magic {
+      flex-direction: row;
+      align-items: end;
+      justify-content: space-between;
+  
+      .magic-text {
+        width: 50%;
+        height: 390px;
+  
+        .magic-text-img {
+          width: 351px;
+          height: 154px;
+        }
+  
+        .magic-text-title {
+          font-family: 'Work Sans';
+          font-size: 60px;
+          font-weight: 600;
+          line-height: 45.6px;
+          text-align: left;
+          color: #ffffff;
+        }
+  
+        .magic-text-button {
+          width: 250px;
+          height: 90px;
+          border-radius: 20px;
+          border: none;
+          font-family: 'Work Sans';
+          font-size: 30px;
+          font-weight: 600;
+          text-align: center;
+          color: #000000;
+  
+          .fa-eye {
+            font-size: 30px;
+            color: #a259ff;
+          }
+        }
+      }
+  
+      .strength {
+        width: 555px;
+        height: 324px;
+        border-radius: 20px;
+        background: #3b3b3b80;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+  
+        .strength-s {
+          font-family: 'Space Mono';
+          font-size: 30px;
+          font-weight: 400;
+          color: #ffffff;
+        }
+  
+        .strength-p {
+          font-family: 'Space Mono';
+          font-size: 60px;
+          font-weight: 700;
+          letter-spacing: 5px;
+          color: #ffffff;
+        }
+  
+        .strength-k {
+          font-family: 'Space Mono';
+          font-size: 28px;
+          font-weight: 400;
+          color: #ffffff;
+          display: flex;
+          gap: 50px;
+        }
+      }
+    }
+  }
+  
