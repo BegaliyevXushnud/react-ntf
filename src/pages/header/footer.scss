@@ -1,161 +1,178 @@
 .footer {
-    width: 100%;
-    background-color: #3B3B3B;
+  width: 100%;
+  background-color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: 2cm;
+
+  .footer-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    width: 90%;
     gap: 25px;
-  margin-top: 2cm;
-    .footer-content {
+  }
+
+  .footer-logo,
+  .footer-explore,
+  .footer-join {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-logo {
+    img {
+      width: 240px;
+      height: auto;
+    }
+
+    p {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 16px;
+      color: #cccccc;
+    }
+
+    .footer-logo-icons {
+      display: flex;
+      gap: 15px;
+
+      a {
+        font-size: 24px;
+        color: #858584;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .footer-explore {
+    h2 {
+      font-family: 'Space Mono', monospace;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    ul {
       display: flex;
       flex-direction: column;
-      width: 90%;
-      gap: 25px;
-      margin-top: auto; 
+      gap: 10px;
+      font-size: 16px;
+      color: #cccccc;
     }
-  
+  }
+
+  .footer-join {
+    h2 {
+      font-family: 'Space Mono', monospace;
+      font-size: 22px;
+      color: #ffffff;
+    }
+
+    p {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 16px;
+      color: #cccccc;
+    }
+
+    .btni {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        width: 100%;
+        max-width: 320px;
+        height: 46px;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      .footer-join-button {
+        width: 100%;
+        max-width: 320px;
+        height: 46px;
+        border-radius: 20px;
+        background-color: #a259ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        color: #ffffff;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #922cfe;
+        }
+      }
+    }
+  }
+
+  .ft {
+    width: 100%;
+    border-top: 1px solid #858584;
+    text-align: center;
+    padding-top: 10px;
+
+    h3 {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 12px;
+      color: #cccccc;
+    }
+  }
+
+  // For larger screens
+  @media (min-width: 992px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+    }
+
     .footer-logo,
     .footer-explore,
     .footer-join {
-      display: flex;
+      width: 30%;
+    }
+  }
+
+  // For tablets
+  @media (max-width: 768px) {
+    .footer-content {
       flex-direction: column;
-      gap: 15px;
+      width: 90%;
     }
-  
-    .footer-logo {
-      img {
-        width: 243.41px;
-        height: 32px;
-      }
-      p {
-        font-family: Work Sans;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 22.4px;
-        text-align: left;
-        color: #CCCCCC;
-      }
-      .footer-logo-icons {
-        display: flex;
-        gap: 15px;
-        a {
-          font-size: 30px;
-          color: #858584;
-        }
-      }
-    }
-  
-    .footer-explore {
-      h2 {
-        font-family: Space Mono;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 35.2px;
-        text-align: left;
-        color: #FFFFFF;
-      }
-      ul {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        color: #CCCCCC;
-        font-size: 16px;
-      }
-    }
-  
+
+    .footer-logo,
+    .footer-explore,
     .footer-join {
-      h2 {
-        font-family: Space Mono;
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 35.2px;
-        text-align: left;
-        color: #FFFFFF;
-      }
-      p {
-        font-family: Work Sans;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 22.4px;
-        text-align: left;
-        color: #CCCCCC;
-      }
-      .btni {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        input {
-          width: 100%;
-          max-width: 315px;
-          height: 46px;
-          border-radius: 20px;
-          border: none;
-          padding: 10px;
-          font-size: 17px;
-        }
-        .footer-join-button {
-          width: 100%;
-          max-width: 315px;
-          height: 46px;
-          border-radius: 20px;
-          background-color: #A259FF;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 6px;
-          color: #FFFFFF;
-          font-family: Work Sans;
-          font-size: 16px;
-          font-weight: 600;
-          line-height: 22.4px;
-          text-align: center;
-          border: none;
-        }
-      }
+      width: 100%;
     }
-  
-    .ft {
+  }
+
+  // For small screens
+  @media (max-width: 576px) {
+    .footer-content {
       width: 95%;
-      border-top: 1px solid #858584;
-      h3 {
-        font-family: Work Sans;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 13.2px;
-        text-align: left;
-        color: #CCCCCC;
-        margin-top: 5px;
-      }
     }
-  
-    @media (min-width: 992px) {
-      .footer-content {
-        flex-direction: row;
-        width: 80%;
-      }
-  
-      .footer-logo,
-      .footer-explore,
-      .footer-join {
-        width: 33%; // Adjust based on your design
-      }
-    }
-  
-    @media (max-width: 768px) {
-      .footer-content {
-        flex-direction: column;
-      }
-  
-      .footer-logo,
-      .footer-explore,
-      .footer-join {
+
+    .btni {
+      input,
+      .footer-join-button {
         width: 100%;
+        max-width: none;
       }
     }
   }
-  @media (min-width:900px) {
-    .footer{
-        margin-top: 21cm;
-    }
-  }
+}
